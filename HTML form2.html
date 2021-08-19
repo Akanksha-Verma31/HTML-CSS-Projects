@@ -1,0 +1,86 @@
+<! DOCTYPE HTML>
+<html>
+<head>
+<title>HTMLforms2</title>
+<style>
+ table{
+  border:1px solid black;
+  margin-left:auto;
+  margin-right:auto;
+  width:50%;
+  background-color:whitesmoke;
+  border-collapse:collapse;
+}
+#ID1 td,#ID1 tr{
+  padding:3px;
+}
+#btnSubmit{
+  color:white;
+  border:1px solid greenyellow;
+  background-color: lightsalmon;
+  border-radius:3px;
+}
+</style>
+</head>
+
+<body>
+<form actions=" ">
+<table ID="ID1" class="center">
+  <tr>
+    <td style="text-align: right;">First Name</td>
+    <td>:</td>
+    <td style="padding-left:30px"><input type="text" name="firstname" value=" " required></td>
+  </tr>
+  <tr>
+    <td style="text-align: right;">Last Name</td>
+    <td>:</td>
+    <td style="padding-left:30px"><input type="text" name="Lastname" required></td>
+  </tr>
+  <tr>
+    <td style="text-align: right;">Gender</td>
+    <td>:</td>
+    <td rowspan="=3" style="padding-left:30px"><input type="radio" name="gender" id="male" required>Male<br>
+      <input type="radio" name="gender" id="female" required>Female<br>
+      <input type="radio" name="gender" id="other" required>Other<br>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: right;">Vehicle</td>
+    <td>:</td>
+    <td style="padding-left:30px">
+     <input type="checkbox" name="bike" ID="bike" ><label for="bike">Bike</label>
+      <input type="checkbox" name="car" ID="car" ><label for="car">Car</label>
+      <input type="checkbox" name="cycle" ID="cycle" ><label for="cycle">Cycle</label>
+     </td>
+    </tr>
+  <tr>
+    <td style="text-align: right;">Favourite Color</td>
+    <td>:</td>
+    <td style="padding-left:30px"><select name="fav_color" id="fav_color">
+      <option value=" ">---select fav color---</option>
+      <option value="blue ">Blue</option>
+      <option value="white ">White</option>
+      <option value="red ">Red</option>
+      <option value="other ">Other</option>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: right;">Feedback</td>
+    <td>:</td>
+    <td style="padding-left:30px"><textarea name="feedback" id="feedback" cols="35" rows="15"></textarea></td>
+  </tr>
+  <tr>
+    <td style="text-align: right;">Email-ID</td>
+    <td>:</td>
+    <td style="padding-left:30px"><input type="email" name="email" id="email" required><button type="button" onclick="alert('email ok')">Validate</button></td>
+    </tr>
+ <tr>
+                <td colspan="3" style="text-align: center;">
+                <input type="submit" value="SUBMIT" id="btnSubmit">
+                </td>
+            </tr>
+</table>
+</form>
+
+</body>
+</html>
